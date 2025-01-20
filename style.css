@@ -194,6 +194,8 @@ input[type="checkbox"] + label {
 
 button.create-account {
   margin-top: 50px;
+  border-radius: 5px;
+  background-color: #0076b6;
 }
 
 button.create-account:hover,
