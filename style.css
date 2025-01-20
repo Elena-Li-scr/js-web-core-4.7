@@ -154,13 +154,11 @@ form p.investor + p {
 
 /* Стили для информационного окна */
 
-.tooltip {
-  margin-right: 25px;
-}
-
-.tooltip-toggle {
+i.fa-solid {
   padding: 0;
-  margin: 0 3px;
+  margin-left: 3px;
+  margin-right: 25px;
+  font-size: 10px;
 }
 
 .tooltip-text {
@@ -177,8 +175,7 @@ form p.investor + p {
   margin-top: 10px;
 }
 
-.tooltip-toggle:hover + .tooltip-text,
-.tooltip-toggle:focus + .tooltip-text {
+input[type="radio"]:focus + label .tooltip-text {
   display: block;
 }
 
