@@ -6,7 +6,7 @@
 
 body {
   width: 100%;
-  height: 150vh;
+  height: 100vh;
   font-family: Barlow, sans-serif;
   color: #2a4a5c;
   background-color: #eff6ff;
@@ -14,37 +14,41 @@ body {
 
 .container {
   display: flex;
-  width: 94%;
-  margin: 3%;
-  box-shadow: 16px 16px 16px -15px rgba(42, 74, 92, 0.34);
+  width: 60%;
+  margin: 20px auto;
 }
 
 .logo {
   background-image: url(img/bg.jpg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  width: 60%;
-  height: 140vh;
+  width: 59%;
+  height: 85vh;
   padding: 1em;
   color: white;
 }
 
 .form {
   background-color: white;
-  padding: 3em;
-  width: 40%;
+  padding: 2em;
+  width: 41%;
+  height: 79vh;
 }
 
 h1 {
   font-weight: 500;
-  padding-top: 20px;
+  padding-top: 15px;
   padding-bottom: 10px;
-  font-size: 30px;
+  font-size: 18px;
+}
+
+h1 + p {
+  font-size: 12px;
 }
 
 div.logo img {
-  width: 140px;
-  padding: 20px;
+  width: 90px;
+  padding: 10px;
 }
 
 /* Кнопки Facebook, Linkedin */
@@ -54,18 +58,19 @@ div.logo img {
 }
 
 button {
-  width: 250px;
-  height: 40px;
+  width: 180px;
+  height: 25px;
   margin-top: 30px;
   position: relative;
   background-color: #0076b6;
   border: none;
   color: #ffffff;
-  font-weight: 200;
+  font-weight: 100;
+  font-size: 8px;
 }
 
 button.facebook {
-  margin-right: 40px;
+  margin-right: 30px;
   background-color: #255a9b;
 }
 
@@ -75,11 +80,11 @@ button:focus {
 }
 
 button img {
-  height: 20px;
+  height: 12px;
   padding: 5px;
   position: absolute;
-  left: 5px;
-  bottom: 5px;
+  left: 3px;
+  bottom: 3px;
 }
 
 /* OR */
@@ -88,9 +93,9 @@ button img {
   display: flex;
   align-items: center;
   text-align: center;
-  margin: 40px auto;
-  width: 300px;
-  font-size: 14px;
+  margin: 25px auto;
+  width: 250px;
+  font-size: 8px;
 }
 
 .line-text::after,
@@ -111,13 +116,13 @@ button img {
 }
 
 .form-control input {
-  height: 25px;
-  width: 215px;
-  padding: 20px 8px 8px 8px;
+  height: 15px;
+  width: 140px;
+  padding: 15px 5px 5px 5px;
   cursor: pointer;
   outline: none;
   border: 1px solid #eeeeee;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .form-control input:focus {
@@ -125,7 +130,7 @@ button img {
 }
 
 .form-control div:first-child {
-  margin-right: 40px;
+  margin-right: 30px;
 }
 
 .form-control label {
@@ -133,49 +138,63 @@ button img {
   left: 6px;
   top: 2px;
   color: #7b8a92;
+  font-size: 12px;
 }
 
 /* Тип инвестора */
 
 form p.investor {
-  font-weight: 600;
-  margin-top: 40px;
-  font-size: 20px;
+  font-weight: 500;
+  margin-top: 30px;
+  font-size: 13px;
 }
 
 form p.investor + p {
-  margin-top: 20px;
+  margin-top: 5px;
   color: #5f676e;
+  font-size: 9px;
 }
 
 .selection {
-  margin-top: 40px;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
 }
 
 /* Стили для информационного окна */
 
-i.fa-solid {
-  padding: 0;
-  margin-left: 3px;
-  margin-right: 25px;
+input[type="radio"] + label {
   font-size: 10px;
+  padding-left: 5px;
 }
 
+.tooltip {
+  margin-right: 15px;
+  position: relative;
+}
+.tooltip-toggle {
+  padding: 0;
+  margin: 0 3px;
+  font-size: 8px;
+}
 .tooltip-text {
-  font-size: 13px;
+  font-size: 8px;
   color: #96a5b1;
   font-weight: 400;
   text-transform: none;
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
-  width: 230px;
+  width: 140px;
   box-shadow: 1px 11px 30px 4px rgba(42, 74, 92, 0.3);
   position: absolute;
   display: none;
-  margin-top: 10px;
+  margin-top: 8px;
 }
-
-input[type="radio"]:focus + label .tooltip-text {
+.tooltip-text-last {
+  right: 5px;
+}
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
   display: block;
 }
 
@@ -183,19 +202,28 @@ a {
   color: #3698fb;
 }
 
+div.checkbox {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+}
+
 input[type="checkbox"] {
-  margin-top: 120px;
+  width: 8px;
+  height: 8px;
 }
 
 input[type="checkbox"] + label {
-  font-size: 12px;
+  font-size: 8px;
   color: #afafaf;
+  margin-left: 5px;
 }
 
 button.create-account {
-  margin-top: 50px;
+  margin-top: 30px;
   border-radius: 5px;
   background-color: #0076b6;
+  width: 150px;
 }
 
 button.create-account:hover,

@@ -15,7 +15,7 @@
       <!-- right part -->
       <div class="form">
         <h1>Get iintoo it today</h1>
-        <p>There is no charge or obligation upon registration</p>
+        <p>There is no charge or obligation upon registration.</p>
         <!-- buttons fb, linkedin -->
         <div class="buttons-wrap">
           <button type="button" class="facebook">
@@ -46,43 +46,53 @@
             <input type="radio" name="investor-type" id="individual" />
             <label for="individual"
               >Individual
-              <i class="fa-solid fa-circle-info"></i>
-              <span class="tooltip-text"
-                >I am a natural person investing on my own behalf as my sole
-                owner, joint tenant, or tenant in common</span
+              <span class="tooltip">
+                <i class="fa-solid fa-circle-info tooltip-toggle"></i>
+                <span class="tooltip-text"
+                  >I am a natural person investing on my own behalf as my sole
+                  owner, joint tenant, or tenant in common</span
+                ></span
               ></label
             >
             <input type="radio" name="investor-type" id="business" />
             <label for="business"
-              >Business<i class="fa-solid fa-circle-info"></i>
-              <span class="tooltip-text"
-                >I am a natural person investing on my own behalf as my sole
-                owner, joint tenant, or tenant in common</span
+              >Business<span class="tooltip">
+                <i class="fa-solid fa-circle-info tooltip-toggle"></i>
+                <span class="tooltip-text"
+                  >I am a natural person investing on my own behalf as my sole
+                  owner, joint tenant, or tenant in common</span
+                ></span
               ></label
             >
             <input type="radio" name="investor-type" id="IRA" />
             <label for="IRA"
-              >IRA<i class="fa-solid fa-circle-info"></i>
-              <span class="tooltip-text"
-                >I am a natural person investing on my own behalf as my sole
-                owner, joint tenant, or tenant in common</span
+              >IRA<span class="tooltip">
+                <i class="fa-solid fa-circle-info tooltip-toggle"></i>
+                <span class="tooltip-text"
+                  >I am a natural person investing on my own behalf as my sole
+                  owner, joint tenant, or tenant in common</span
+                ></span
               ></label
             >
             <input type="radio" name="investor-type" id="trust" />
             <label for="trust"
-              >Trust<i class="fa-solid fa-circle-info"></i>
-              <span class="tooltip-text"
-                >I am a natural person investing on my own behalf as my sole
-                owner, joint tenant, or tenant in common</span
+              >Trust<span class="tooltip">
+                <i class="fa-solid fa-circle-info tooltip-toggle"></i>
+                <span class="tooltip-text tooltip-text-last"
+                  >I am a natural person investing on my own behalf as my sole
+                  owner, joint tenant, or tenant in common</span
+                ></span
               ></label
             >
           </div>
           <!-- agreement -->
-          <input type="checkbox" name="agreement" />
-          <label for="agreement"
-            >I agree to the terms and receiving notifications from iintoo
-            <a href="#">View full terms</a></label
-          >
+          <div class="checkbox">
+            <input type="checkbox" name="agreement" />
+            <label for="agreement"
+              >I agree to the terms and receiving notifications from iintoo
+              <a href="#">View full terms</a></label
+            >
+          </div>
           <button type="submit" class="create-account">Create Account</button>
         </form>
       </div>
