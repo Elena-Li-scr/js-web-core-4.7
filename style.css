@@ -10,20 +10,21 @@ body {
   font-family: Barlow, sans-serif;
   color: #2a4a5c;
   background-color: #eff6ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
   display: flex;
   width: 60%;
-  margin: 20px auto;
 }
 
 .logo {
   background-image: url(img/bg.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 59%;
-  height: 85vh;
+  width: 58%;
   padding: 1em;
   color: white;
 }
@@ -31,7 +32,7 @@ body {
 .form {
   background-color: white;
   padding: 2em;
-  width: 41%;
+  width: 42%;
   height: 79vh;
 }
 
